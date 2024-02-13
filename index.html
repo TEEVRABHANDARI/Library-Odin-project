@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="card">
+        <h1 style="font-style: italic;">Your library</h1>
+        <button class="button-50" id="newButton">
+            Add new Book
+        </button>
+    </div>   
+        
+    <form action="" id="newBookEntry" style="display: none; flex-direction: column;">
+        <label for="Title" style="font-style: italic;">Title:</label>
+        <input type="text" placeholder="Can't hurt me"  id="name">
+        <label for="Author" style="font-style: italic;">Author:</label>
+        <input type="text" placeholder="David Goggins"  id="author">
+        <label for="Pages" style="font-style: italic;" >Pages:</label>
+        <input type="text" placeholder="363" id="pages">
+        <label for="Read"style="font-style: italic;" >Select:</label>
+        <select id="read">
+            <option value="Read">Read</option>
+            <option value="Not Read">Not Read</option>
+        </select>
+        <br>
+        <button type="submit" class="button-50">Submit</button>
+    </form>
+
+    <div class="library">
+
+    </div>
+    
+<script src="./script.js"></script>
+</body>
+</html>
